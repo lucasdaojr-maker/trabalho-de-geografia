@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo e nutrientes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(212, 182, 126);
+            font: 18px Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: rgb(0, 105, 26);
+        }
+
+        h3 {
+            color: white;
+        }
+
+        /* Cabeçalho */
+        .div {
+            min-height: 30vh;
+            background: url("https://images.openai.com/static-rsc-4/5Uq89g_KWjVmJBXjOpXLxCY9vT3lEtEbux_pEm94kKR8BF7G1cQnUreuKZFSYDg6brq2gFmk17eR3DgB1ZgKtcjwQJxxF-TcQXM6yviyFz7TzKPf_dQDqZYo4fZ_ZrK4PJEXq1By7mImC0ZPlQIRinZcO2EaAav6NNU3amH8gbqP-oMMunXvwWA0w1fnTDZM?purpose=fullsize") center/cover no-repeat;
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .div h1 {
+            color: white;
+            text-shadow: 0 0 5px rgb(0,174,200);
+            margin: 0 0 8px 0;
+            font-size: 42px;
+        }
+
+        .div h3 {
+            text-shadow: 0 0 5px black;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        /* Conteúdo / Caixas */
+        .conteudo {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 15px;
+            border-left: 6px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .conteudo:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        .texto h2 {
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .texto p {
+            margin-bottom: 15px;
+            color: rgb(104, 62, 0);
+        }
+
+        /* Imagens */
+        .imagem {
+            width: 40%;
+            flex-shrink: 0;
+        }
+
+        .imagem img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 3px solid rgb(0, 105, 26);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .imagem img:hover {
+            transform: scale(1.03);
+        }
+
+        .invertida {
+            flex-direction: row-reverse;
+        }
+
+        /* Celulares */
+        @media (max-width: 700px) {
+            .conteudo, .invertida {
+                flex-direction: column;
+                width: 90%;
+                padding: 22px;
+                gap: 20px;
+            }
+
+            .imagem {
+                width: 100%;
+            }
+
+            .imagem img {
+                height: 230px;
+            }
+
+            body {
+                font-size: 17px;
+            }
+
+            .div h1 {
+                font-size: 32px;
+            }
+
+            .div h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="div">
+        <h1>Domínio das Pradarias</h1>
+        <h3>Uma paisagem de campos, solos e biodiversidade</h3>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <div class="texto">
+                <h2>Tipos de solo</h2>
+                <p>
+                    Os solos das Pradarias, localizadas principalmente
+                    no Rio Grande do Sul, apresentam características variadas.
+                    Algumas áreas possuem solos escuros e férteis, enquanto
+                    outras têm solos arenosos ou pouco profundos.
+                </p>
+                <p>
+                    Essas diferenças influenciam o crescimento das plantas
+                    e as possibilidades de uso agrícola de cada região.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/PC100017.JPG"
+                alt="Campos naturais do Rio Grande do Sul">
+            </div>
+        </section>
+
+        <section class="conteudo invertida">
+            <div class="texto">
+                <h2>Nutrientes do solo</h2>
+                <p>
+                    A matéria orgânica, formada pela decomposição de restos
+                    de seres vivos, ajuda a manter a fertilidade do solo
+                    e a reter água e nutrientes.
+                </p>
+                <p>
+                    O nitrogênio favorece o crescimento das folhas,
+                    o fósforo contribui para o desenvolvimento das raízes
+                    e o potássio participa da regulação da água nas plantas.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="solo.jpeg"
+                alt="Paisagem do bioma Pampa">
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <div class="texto">
+                <h2>Degradação e preservação</h2>
+                <p>
+                    O uso inadequado do solo pode provocar erosão e perda
+                    de nutrientes. Em algumas áreas do sudoeste gaúcho
+                    também ocorre a arenização, com a exposição de solos
+                    arenosos e dificuldade para o crescimento da vegetação.
+                </p>
+                <p>
+                    Preservar a vegetação natural e utilizar o solo de
+                    maneira adequada ajuda a reduzir a degradação e
+                    proteger o equilíbrio ambiental das Pradarias.
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Areal_consolidado.jpg"
+                alt="Área de arenização no Pampa">
+            </div>
+        </section>
+    </main>
+    <br><br>
+</body>
+</html>

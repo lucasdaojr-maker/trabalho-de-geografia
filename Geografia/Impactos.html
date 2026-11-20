@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactos Ambientais</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(212, 182, 126);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: white;
+            text-shadow: 0 0 5px rgb(0,174,200);
+            margin: 0 0 8px 0;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: rgb(0, 105, 26);
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: rgb(104, 62, 0);
+            margin-bottom: 15px;
+        }
+
+        /* Cabeçalho padronizado */
+        .div {
+            min-height: 35vh;
+            background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+            url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1000&auto=format&fit=crop") center/cover no-repeat;
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .div h3 {
+            color: white;
+            text-shadow: 0 0 5px black;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        /* Conteúdo / Caixas */
+        .conteudo {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 15px;
+            border-left: 6px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .conteudo:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        /* Imagens padronizadas */
+        .imagem {
+            width: 40%;
+            flex-shrink: 0;
+        }
+
+        .imagem img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 3px solid rgb(0, 105, 26);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .imagem img:hover {
+            transform: scale(1.03);
+        }
+
+        .invertida {
+            flex-direction: row-reverse;
+        }
+
+        /* Celulares */
+        @media (max-width: 700px) {
+            .conteudo, .invertida {
+                flex-direction: column;
+                width: 90%;
+                padding: 22px;
+                gap: 20px;
+            }
+
+            .imagem {
+                width: 100%;
+            }
+
+            .imagem img {
+                height: 230px;
+            }
+
+            body {
+                font-size: 17px;
+            }
+
+            .div h1 {
+                font-size: 32px;
+            }
+
+            .div h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="div">
+        <h1>Impactos Ambientais</h1>
+        <h3>Desafios e conservação nas Pradarias</h3>
+    </header>
+
+    <main>
+        <!-- Seção 1: Agricultura e Solos -->
+        <section class="conteudo">
+            <div class="texto">
+                <h2>Avanço da Agricultura e Defensivos</h2>
+                <p>
+                    Os impactos ambientais que afetam a Pradaria decorrem principalmente das atividades econômicas intensivas. A agricultura em larga escala substitui gradualmente a vegetação nativa por monoculturas, alterando a dinâmica do ecossistema original.
+                </p>
+                <p>
+                    Além disso, o uso recorrente de defensivos agrícolas e fertilizantes químicos danifica a estrutura microbiana do solo e pode contaminar os recursos hídricos da região.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtZdjneP7ex6sFPDO9UZFuOOMWwE5GTOfeBmGDv6V5zPHw9YStS0lwxU&s=10" alt="Impacto da agricultura no solo">
+            </div>
+        </section>
+
+        <!-- Seção 2: Pecuária e Compactação (Invertida) -->
+        <section class="conteudo invertida">
+            <div class="texto">
+                <h2>Impacto da Pecuária Intensiva</h2>
+                <p>
+                    Embora a pecuária extensiva tradicional faça parte da história do Pampa, o manejo inadequado e a superlotação de gado geram sérios problemas para o solo.
+                </p>
+                <p>
+                    O pisoteio constante dos animais compacta camadas superficiais da terra, dificultando drasticamente a infiltração da água da chuva e acelerando processos erosivos.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1000&auto=format&fit=crop" alt="Pecuária no bioma Pampa">
+            </div>
+        </section>
+
+        <!-- Seção 3: Hidrografia e Comunidades -->
+        <section class="conteudo">
+            <div class="texto">
+                <h2>Consequências na Hidrografia e Sociedade</h2>
+                <p>
+                    Com a degradação da cobertura vegetal e a impermeabilização do solo, há menor retenção de umidade e menor regulação natural da atmosfera local.
+                </p>
+                <p>
+                    Como resultado, a hidrografia regional fica seriamente prejudicada, impactando diretamente as comunidades locais, ribeirinhos e pequenos produtores que dependem do equilíbrio hídrico da bacia.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop" alt="Banhados e recursos hídricos">
+            </div>
+        </section>
+
+        <!-- Seção 4: Preservação e Soluções (Invertida) -->
+        <section class="conteudo invertida">
+            <div class="texto">
+                <h2>Caminhos para a Sustentabilidade</h2>
+                <p>
+                    Para reverter esse cenário, tornam-se essenciais práticas de manejo sustentável, como o pastejo rotacionado e a conservação das matas ciliares ao longo dos rios.
+                </p>
+                <p>
+                    Proteger a vegetação nativa restante garante a biodiversidade, evita a arenização do solo e assegura os serviços ecossistêmicos fundamentais para o futuro das Pradarias.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop" alt="Paisagem preservada do Pampa">
+            </div>
+        </section>
+    </main>
+
+    <br><br>
+</body>
+</html>

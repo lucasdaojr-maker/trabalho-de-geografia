@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relevo nas Pradarias</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(212, 182, 126);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .topo {
+            min-height: 30vh;
+            background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6)),
+            url("https://static.wixstatic.com/media/a35cf2_9b94648b863c4d89b9c1d4db759c74ae~mv2.jpg/v1/fill/w_960,h_540,al_c,lg_1,q_85/a35cf2_9b94648b863c4d89b9c1d4db759c74ae~mv2.jpg") center/cover;
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .topo h1 {
+            color: white;
+            text-shadow: 0 0 5px rgb(0,174,200);
+            margin: 0 0 8px 0;
+            font-size: 42px;
+        }
+
+        .topo h3 {
+            color: white;
+            text-shadow: 0 0 5px black;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        strong {
+            color: rgb(0, 105, 26);
+        }
+
+        p {
+            font-size: 18px;
+            color: rgb(104, 62, 0);
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: rgb(104, 62, 0);
+        }
+
+        h2 {
+            color: rgb(0, 105, 26);
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .caixa {
+            background-color: rgba(255, 255, 255, .3);
+            width: 80%;
+            max-width: 1200px;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            border-left: 6px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .caixa:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        .imagem {
+            width: 40%;
+            flex-shrink: 0;
+        }
+
+        .caixa img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease;
+        }
+
+        .caixa img:hover {
+            transform: scale(1.03);
+        }
+
+        .invertida {
+            flex-direction: row-reverse;
+        }
+
+        ol {
+            color: rgb(104, 62, 0);
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .caixa, .invertida {
+                flex-direction: column;
+                width: 90%;
+                padding: 22px;
+                gap: 20px;
+            }
+
+            .imagem {
+                width: 100%;
+            }
+
+            .caixa img {
+                height: 230px;
+            }
+
+            .topo h1 {
+                font-size: 32px;
+            }
+
+            .topo h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topo">
+        <h1>Relevo</h1>
+        <h3>O relevo nas pradarias</h3>
+    </header>
+
+    <main>
+        <section class="caixa">
+            <div class="texto">
+                <h2>O Que é o Relevo?</h2>
+                <p>O relevo é o conjunto das formas da superfície terrestre, ou seja, todas as variações de altura, curvas, montanhas, vales e planícies que desenham a paisagem do nosso planeta. Ele é o resultado de forças internas da Terra (como o movimento de placas tectônicas) combinadas com agentes externos (como a chuva, o vento e os rios) que esculpem o solo ao longo de milhões de anos.</p>
+            </div>
+            <div class="imagem">
+                <img src="relevo.jpg.jpeg" alt="Imagem do Relevo 1">
+            </div>
+        </section>
+
+        <section class="caixa invertida">
+            <div class="texto">
+                <h2>Como é o Relevo nas Pradarias:</h2>
+                <p>Embora a palavra indígena "pampa" signifique "terra plana", o relevo da região está longe de ser um tapete perfeitamente liso.<br><br>
+                A principal característica do relevo do Pampa é o chamado relevo suave-ondulado, marcado pelas famosas coxilhas. As coxilhas são colinas baixas, suaves e arredondadas que criam um visual de "ondas" verdes no horizonte. Entre uma coxilha e outra, formam-se grandes planícies e áreas rebaixadas.</p>
+            </div>
+            <div class="imagem">
+                <img src="relevo2.jpg.jpeg" alt="Imagem do Relevo 2">
+            </div>
+        </section>
+
+        <section class="caixa">
+            <div class="texto">
+                <h2>Tipo de Relevo nas Pradarias</h2>
+                <ol type="I">
+                    <li><strong>Planalto da Campanha:</strong> Região de ondulações suaves e áreas onde o arenito aflora na superfície.</li>
+                    <li><strong>Depressão Central:</strong> Áreas mais baixas localizadas ao longo dos vales dos rios principais.</li>
+                    <li><strong>Planalto Sul-Rio-Grandense:</strong> Uma região com formações rochosas muito antigas, onde o relevo é um pouco mais acidentado e rochoso.</li>
+                    <li><strong>Planície Costeira:</strong> Áreas totalmente planas próximas ao oceano e às grandes lagoas.</li>
+                </ol>
+            </div>
+            <div class="imagem">
+                <img src="relevo3.png" alt="Imagem do Relevo 3">
+            </div>
+        </section>
+
+        <section class="caixa invertida">
+            <div class="texto">
+                <h2>Como os Cientistas Estudam o Relevo</h2>
+                <p>Geógrafos, topógrafos e engenheiros utilizam uma combinação de técnicas tradicionais de campo e tecnologias de ponta para entender a estrutura e a altimetria do Pampa:</p>
+                <p><strong>Curvas de Nível e Mapas Topográficos:</strong> O relevo é desenhado em mapas usando linhas que unem pontos de mesma altitude.<br><br>
+                <strong>Imagens de Satélite e Sensores Remotos:</strong> Cientistas utilizam dados de satélites e radares espaciais para criar Modelos Digitais de Elevação.<br><br>
+                <strong>GPS de Alta Precisão e Drones:</strong> Equipes utilizam receptores GPS geodésicos e drones para medir coordenadas e altitudes com precisão.</p>
+            </div>
+            <div class="imagem">
+                <img src="relevo4.png" alt="Imagem do Relevo 4">
+            </div>
+        </section>

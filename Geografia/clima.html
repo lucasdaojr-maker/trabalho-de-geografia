@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(212, 182, 126);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .topo {
+            min-height: 30vh;
+            background: url("imagem_topo.png") center/cover no-repeat;
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .topo h1 {
+            color: white;
+            text-shadow: 0 0 5px rgb(0,174,200);
+            margin: 0 0 8px 0;
+            font-size: 42px;
+        }
+
+        .topo h3 {
+            color: white;
+            text-shadow: 0 0 5px black;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        strong {
+            color: rgb(0, 105, 26);
+        }
+
+        p {
+            font-size: 18px;
+            color: rgb(104, 62, 0);
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: rgb(104, 62, 0);
+        }
+
+        h2 {
+            color: rgb(0, 105, 26);
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .caixa {
+            background-color: rgba(255, 255, 255, .3);
+            width: 80%;
+            max-width: 1200px;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            border-left: 6px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .caixa:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .texto {
+            flex: 1;
+        }
+
+        .imagem {
+            width: 40%;
+            flex-shrink: 0;
+        }
+
+        .caixa img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid rgb(0, 105, 26);
+            transition: transform 0.3s ease;
+        }
+
+        .caixa img:hover {
+            transform: scale(1.03);
+        }
+
+        .invertida {
+            flex-direction: row-reverse;
+        }
+
+        ul {
+            color: rgb(104, 62, 0);
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            .caixa, .invertida {
+                flex-direction: column;
+                width: 90%;
+                padding: 22px;
+                gap: 20px;
+            }
+
+            .imagem {
+                width: 100%;
+            }
+
+            .caixa img {
+                height: 230px;
+            }
+
+            .topo h1 {
+                font-size: 32px;
+            }
+
+            .topo h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <h1>Pradarias Mistas</h1>
+        <h3>Tudo sobre seu clima</h3>
+    </header>
+
+    <main>
+        <section class="caixa">
+            <div class="texto">
+                <h2>Introdução:</h2>
+                <p>As pradarias mistas são formações vegetais encontradas principalmente na América do Norte, em regiões de transição entre áreas mais úmidas e áreas mais secas. Seu clima é geralmente <strong>temperado continental</strong>, com estações do ano bem definidas e variações consideráveis de temperatura.</p>
+            </div>
+            <div class="imagem">
+                <img src="introduco.png" alt="Imagem de pradaria">
+            </div>
+        </section>
+
+        <section class="caixa invertida">
+            <div class="texto">
+                <h2>Temperaturas</h2>
+                <ul>
+                    <li><strong>Verão:</strong> costuma ser quente, podendo apresentar períodos de calor e seca.</li>
+                    <li><strong>Inverno:</strong> é frio, com temperaturas negativas e ocorrência de neve em algumas regiões.</li>
+                    <li><strong>Variação térmica:</strong> a diferença entre as temperaturas do verão e do inverno pode ser grande, devido à influência do clima continental.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="caixa">
+            <div class="texto">
+                <h2>Ventos e Umidade</h2>
+                <p>As pradarias são áreas abertas, com poucas árvores. Por isso, os ventos podem circular livremente pela paisagem. Além disso, as temperaturas elevadas aumentam a evaporação da água, contribuindo para a redução da umidade do solo.</p>
+                <h2>Fenômenos Climáticos</h2>
+                <p>As <strong>secas</strong> são uma característica importante dessas regiões. Como as chuvas são relativamente <strong>escassas e irregulares</strong>, alguns períodos podem apresentar pouca água disponível para as plantas. Também podem ocorrer tempestades, nevascas no inverno e incêndios naturais, que influenciam a dinâmica da vegetação.</p>
+            </div>
+            <div class="imagem">
+                <img src="ventos.png" alt="Foto de pradaria">
+            </div>
+        </section>
+    </main>
+    <br><br>
+</body>
+</html>
